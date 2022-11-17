@@ -1,6 +1,6 @@
 @-webkit-keyframes admixture-bigger {
     0%{
-      width:50vw;
+      width:60vw;
     }
     100%{
       width:70vw;
@@ -8,7 +8,7 @@
 }
 @keyframes admixture-bigger {
     0%{
-      width:50vw;
+      width:60vw;
     }
     100%{
       width:70vw;
