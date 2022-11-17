@@ -17,3 +17,22 @@
   src: url("../font/KoPub Dotum Bold.ttf");
   font-family: "KoPub Dotum Bold";
 }
+
+@font-face {
+  src: url("../font/Pretendard-Medium.ttf");
+  font-family: "Pretendard Medium";
+}
+
+@font-face {
+  src: url("../font/Pretendard-Light.ttf");
+  font-family: "Pretendard Light";
+}
+@font-face {
+  src: url("../font/Pretendard-Bold.ttf");
+  font-family: "Pretendard Bold";
+}
+
+@font-face {
+  src: url("../font/Pretendard-ExtraBold.ttf");
+  font-family: "Pretendard ExtraBold";
+}

@@ -1,13 +1,4 @@
-html {
-    scroll-behavior: smooth;
-}
 
-body{
-  -ms-overflow-style: none; /* IE and Edge */
-   scrollbar-width: none; /* Firefox */
-   margin:0;
-   font-family: ;
-}
 
 .main_background{
   /* background-color: gray; */
@@ -51,85 +42,9 @@ body{
 
 
 
-.sub_container{
-  position:fixed;
-  width:100%;
-  height:150px;
-  z-index:3;
-
-  display:flex;
-  flex-direction: row;
-  justify-content:space-between;
-  align-items: center;
-
-  /* background-color:yellow; */
-}
-
-.sub_container a{
-  width:180px;
-  height:180px;
-
-  /* background-color:green; */
-}
-
-.sub_text{
-  background-image:url("../im/HYU-ARE.png");
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
-
-  margin:0 0 0 40px;
-}
-
-.menubar{
-  background-image:url("../im/menubar.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:52px;
-}
-
-/* menu container입니당*/
-
-.menu-container{
-  display:block;
-  position:fixed;
-  z-index: 5;
-  width:100%;
-  height:100%;
-  background-color:black;
-
-  color:white;
-  text-align:center;
-  padding:50% 0;
-  font-size:20pt;
-  opacity:1;
-  z-index: 5;
-  left:100%;
 
 
-}
-.animated{
-  animation: right-left 0.3s ease-out;
-  left:0;
-}
-.animated-after{
 
-  animation: right-left-reverse 0.3s;
-}
-
-.xsign{
-  position:absolute;
-  width:60px;
-  height:60px;
-  background-image:url("../im/X.png");
-  background-size:contain;
-  background-position:center;
-  right:80px;
-  top:80px;
-
-}
-
-/* ---------------------- */
 
 .main_container{
   width:100%;
@@ -168,30 +83,6 @@ body{
   height:1300px;
 }
 
-footer{
-  position:absolute;
-  top:7000px;
-  height:200px;
-  width:100%;
-  background-color:black;
-  bottom:0;
-  color:white;
-
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  font-family:"KoPub Dotum Light", sans-serif;
-}
-
-.fin_char{
-  font-size:16pt;
-}
-
-.fin_char:nth-child(1){
-  margin-bottom:20px;
-}
 
 
 
