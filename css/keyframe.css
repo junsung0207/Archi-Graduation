@@ -1,3 +1,11 @@
+@-webkit-keyframes admixture-bigger {
+    0%{
+      width:60vw;
+    }
+    100%{
+      width:70vw;
+    }
+}
 @keyframes admixture-bigger {
     0%{
       width:60vw;
@@ -5,4 +13,22 @@
     100%{
       width:70vw;
     }
+}
+
+@keyframes right-left {
+  0%{
+    left:100%;
+  }
+  100%{
+    left:0;
+  }
+}
+
+@keyframes right-left-reverse {
+  0%{
+    left:0;
+  }
+  100%{
+    left:100%;
+  }
 }
