@@ -1,0 +1,19 @@
+@font-face {
+  src: url("../font/swissk.ttf");
+  font-family: "Swis721";
+}
+
+@font-face {
+  src: url("../font/KoPub Dotum Medium.ttf");
+  font-family: "KoPub Dotum Medium";
+}
+
+@font-face {
+  src: url("../font/KoPub Dotum Light.ttf");
+  font-family: "KoPub Dotum Light";
+}
+
+@font-face {
+  src: url("../font/KoPub Dotum Bold.ttf");
+  font-family: "KoPub Dotum Bold";
+}
