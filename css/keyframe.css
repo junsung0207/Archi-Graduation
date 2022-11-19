@@ -44,3 +44,25 @@
     opacity:1;
   }
 }
+
+@keyframes fadein-left_custom1 {
+  0%{
+    padding:0 0 0 200px;
+    opacity:0;
+  }
+  100%{
+    padding:0 0 0 100px;
+    opacity:1;
+  }
+}
+
+@keyframes fadein-right_custom1 {
+  0%{
+    margin-right:100px;
+    opacity:0;
+  }
+  100%{
+    margin-right:0px;
+    opacity:1;
+  }
+}

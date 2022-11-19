@@ -1,19 +1,149 @@
 .main_container{
   background-color:black;
   width:100%;
-  /* height:4000px; */
-
-  height:10000px;
-  background-image:url("../im/maintest.jpg");
-  background-size:contain;
-  background-repeat: no-repeat;
+  /* height:6000px; */
+  height:auto;
+  background-color:black;
 }
 
 body{
   font-family:"Pretendard Medium",sans-serif;
 }
 
-.archive{
+.Introduce{
+  width:100%;
+  /* height:3600px; */
+  background-image: url("../im/Archive-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+
+}
+
+.introduce div{
+  padding:300px 0 0 0;
+  /* background-color:white; */
+  font-size:34pt;
+  font-family: "Pretendard Light",sans-serif;
+}
+
+.introbox1{
+  width:100%;
+  height:1200px;
+  line-height: 80px;
+}
+
+.introbox1 p{
+  color:#c43d1f;
+  padding: 0 100px;
+  font-family: "Pretendard Medium";
+  transform: scale(1, 1.1);
+
+  animation:fadein-left_custom1 1s;
+}
+
+.introbox1 div{
+  width:100%;
+  height:100px;
+}
+
+.introbox1 span{
+  color:white;
+}
+
+.introbox2{
+  width:100%;
+  height:1000px;
+  /* background-color:white; */
+
+  text-align: right;
+  line-height: 60px;
+  color:#fbd0ad;
+  margin-top:200px;
+  opacity:0;
+
+}
+
+.introbox2-animated{
+  animation:fadein-right_custom1 1s;
+  opacity:1;
+}
+
+.introbox2 p{
+  padding:0 100px;
+  font-family: "Pretendard Medium",sans-serif;
+  transform: scale(1, 1.1);
+}
+
+.introbox2 span:nth-child(2){
+  font-size:24pt;
+  color:white;
+  font-family: "Pretendard Light";
+}
+
+.stlist{
+  width:auto;
+  /* height:4000px; */
+  height:auto;
+  background-color:#c43d1f;
+  padding:300px 80px;
+  color:black;
+  font-family: "Pretendard Light",sans-serif;
+}
+
+.stlist-p{
+  font-size:30pt;
+  color:#fbd0ad;
+  margin-bottom:400px;
+  letter-spacing: 3pt;
+  opacity:0;
+}
+
+.stlist-p-animated{
+  animation:fadein-left-stlist-p 1s;
+  opacity:1;
+}
+
+@keyframes fadein-left-stlist-p {
+  0%{
+    padding-left:100px;
+    opacity:0;
+  }
+  100%{
+    padding-left:0px;
+    opacity: 1;
+  }
+}
+
+
+
+.stlist h2{
+  font-size:10pt;
+  color:#fbd0ad;
+  margin-bottom:160px;
+  font-weight: 100;
+}
+
+.s_pf{
+  font-size:26pt;
+  text-decoration:none;
+}
+
+.s_list h3{
+  font-size:26pt;
+  text-decoration:underline;
+  font-weight:normal;
+
+}
+
+
+/*
+ .archive{
   width:100%;
   height:4000px;
   text-align: center;
@@ -31,7 +161,7 @@ body{
   padding:300px 0 0 0;
   width:80%;
   height:1300px;
-  /* background-color:gray; */
+  background-color:gray;
   display:flex;
   flex-direction: row;
   justify-content: space-between;
@@ -47,7 +177,7 @@ body{
 .graduation-container div{
   width:19%;
   height:100px;
-  /* background-color:white; */
+  background-color:white;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +188,7 @@ body{
 .contest-container{
   width:100%;
   height:1200px;
-  /* background-color:green; */
+  background-color:green;
   padding: 0 0 200px 0;
 
   display:flex;
@@ -79,10 +209,11 @@ body{
 .contest-container div{
   width:;
   height:100px;
-  /* background-color:white; */
+  background-color:white;
   display:flex;
   justify-content: center;
   align-items: center;
   font-size:25pt;
   color:white;
 }
+*/

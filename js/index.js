@@ -15,4 +15,4 @@ function menubar_disable(){
   $(".menu-container").addClass("animated-after");
 }
 
-console.log("test complete")
+console.log("test complete");
