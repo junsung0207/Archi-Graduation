@@ -19,7 +19,7 @@
 }
 
 @font-face {
-  src: url("../font/Pretendard-Medium.ttf");
+  src: url("../font/Pretendard-Medium.otf");
   font-family: "Pretendard Medium";
 }
 
@@ -28,11 +28,11 @@
   font-family: "Pretendard Light";
 }
 @font-face {
-  src: url("../font/Pretendard-Bold.ttf");
+  src: url("../font/Pretendard-Bold.otf");
   font-family: "Pretendard Bold";
 }
 
 @font-face {
-  src: url("../font/Pretendard-ExtraBold.ttf");
+  src: url("../font/Pretendard-ExtraBold.otf");
   font-family: "Pretendard ExtraBold";
 }
