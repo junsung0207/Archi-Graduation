@@ -1,9 +1,4 @@
-$( window ).on( "load", function() {
-   console.log( "로딩성공" );
-   console.log(window.scrollY);
-   // $(".loading").css("visibility","hidden");
-   // $(".main_background").css("display","flex");
- });
+
 
 window.addEventListener('scroll', onScroll);
 

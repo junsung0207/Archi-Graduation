@@ -9,6 +9,25 @@ body{
    font-family: ;
 }
 
+.loading{
+  position:fixed;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100%;
+  background-color:black;
+  z-index: 10;
+  color:white;
+  font-size:3.3vw;
+  font-family: "Pretendard Light",sans-serif;
+}
+
+.loading img{
+  filter: opacity(0.5);
+}
+
 .sub_container{
   position:fixed;
   width:100%;
