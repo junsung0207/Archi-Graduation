@@ -77,6 +77,15 @@
 
 #Feed2{
   height:2175px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:180%;
+  background-image:url("../im/story.gif");
+}
+
+#Feed2 img{
+  max-width: 180%;
 }
 
 #Feed4{

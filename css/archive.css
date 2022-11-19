@@ -1,7 +1,12 @@
 .main_container{
   background-color:black;
   width:100%;
-  height:4000px;
+  /* height:4000px; */
+
+  height:10000px;
+  background-image:url("../im/maintest.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
 }
 
 body{
