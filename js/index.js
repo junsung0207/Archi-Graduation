@@ -19,7 +19,7 @@ window.addEventListener('scroll', onScroll);
 
 
 function onScroll(){
-  console.log(scrollY);
+  // console.log(scrollY);
   if(scrollY >= 200 && scrollY <= 1400)
   var sc = (1400 - scrollY)/10;
   var sc_v = (63+sc*0.1);

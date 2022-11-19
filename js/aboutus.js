@@ -8,7 +8,7 @@ window.addEventListener('scroll', onScroll);
 
 
 function onScroll(){
-  console.log(scrollY);
+  // console.log(scrollY);
   if(scrollY > 2200){
     $("#Introfeed1 p").addClass("fade");
   }
