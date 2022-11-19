@@ -60,6 +60,16 @@ body{
   margin:100px 0;
 }
 
+
+@keyframes fade {
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:100%:
+  }
+}
+
 .introfeed:nth-child(1){
   background-image:url("../im/intro-1.png");
 }
@@ -73,6 +83,15 @@ body{
   line-height: 50px;
   padding:0 100px;
   font-family: "Pretendard Light",sans-serif;
+}
+
+.opa0{
+  opacity:0;
+}
+
+.fade{
+  animation:fade 1s;
+  opacity:1;
 }
 
 /*미세조정 */
