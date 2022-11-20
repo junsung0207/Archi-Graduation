@@ -4,6 +4,8 @@
   /* height:6000px; */
   height:auto;
   background-color:black;
+
+  display:none;
 }
 
 /* body{
@@ -138,5 +140,26 @@
   font-size:58px;
   text-decoration:underline;
   font-weight:normal;
+}
 
+
+.archivedetail{
+  display:none;
+  /* display:flex; */
+  position:fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top:10%;
+  left:5%;
+
+  width:90%;
+  height:80%;
+  background-color:black;
+  z-index:4;
+  transition: 1s;
+
+  color:white;
+  text-align: center;
+  font-size:30px;
 }

@@ -1,4 +1,10 @@
-
+$( window ).on( "load", function() {
+   console.log( "로딩성공" );
+   // $(".loading").css("visibility","hidden");
+   // $(".main_background").css("display","flex");
+   $(".loading").css("display","none");
+   $(".main_container").css("display","block");
+ });
 
 window.addEventListener('scroll', onScroll);
 
@@ -19,5 +25,24 @@ function onScroll(){
     $(".stlist-p").addClass("stlist-p-animated");
     stlist_switch = 1;
   }
+}
 
+var detail_isopen = 0;
+
+function deopen(n){
+  if(detail_isopen == 0){
+    $($(".archivedetail")[n-1]).css({
+      "display":"flex",
+      "opacity":"1"
+    });
+  }
+  detail_isopen = 1;
+}
+
+function declose(n){
+  $($(".archivedetail")[n-1]).css({
+    "display":"none",
+    "opacity":"0"
+  });
+  detail_isopen = 0;
 }
