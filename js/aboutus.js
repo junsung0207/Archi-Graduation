@@ -13,7 +13,7 @@ function onScroll(){
 
   // if(scrollY > 400){
   //   $('.intro p:nth-child(9)').addClass("block");
-  // }
+  //
 
 
   if(scrollY > 2200){
