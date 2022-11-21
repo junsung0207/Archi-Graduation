@@ -2,6 +2,7 @@ $( window ).on( "load", function() {
    console.log( "로딩성공" );
    $(".loading").css("visibility","hidden");
    $(".main_container").css("display","block");
+   
  });
 
 
@@ -9,7 +10,7 @@ window.addEventListener('scroll', onScroll);
 
 
 function onScroll(){
-  console.log(scrollY);
+  //console.log(scrollY);
 
   // if(scrollY > 400){
   //   $('.intro p:nth-child(9)').addClass("block");

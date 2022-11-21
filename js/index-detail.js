@@ -4,6 +4,9 @@ $( window ).on( "load", function() {
    // $(".main_background").css("display","flex");
    $(".loading").css("display","none");
    $(".main_background").css("display","flex");
+   if(window.screen.width>=1024){
+     $(".warning_com").css("display","flex");
+   }
  });
 
 window.addEventListener('scroll', onScroll);
@@ -12,7 +15,7 @@ window.addEventListener('scroll', onScroll);
 var brightlevel = 0.5;
 
 function onScroll(){
-  console.log(scrollY);
+  //console.log(scrollY);
   if(scrollY >= 200 && scrollY <= 1400){
   var sc = (1400 - scrollY)/10;
   if(window.screen.width<1024){
@@ -30,7 +33,6 @@ function onScroll(){
   else if(scrollY <200){
     $('#Feed1 img').width("63.65vw");
   }
-  console.log(window.screen.height, window.screen.width);
   if(window.screen.width<1024){
     var br_init = 600;
   }
@@ -39,10 +41,10 @@ function onScroll(){
   }
    if(scrollY > br_init && scrollY < br_init+800 && window.screen.height){
      var brscroll = (scrollY-br_init) / 800.0;
-     console.log('brscroll: '+brscroll)
+     //console.log('brscroll: '+brscroll)
      brightlevel = 1.0 -brscroll;
      var bright = "brightness(" + brightlevel + ")";
-     console.log(bright);
+     //console.log(bright);
      $('.main_background').css("filter",bright);
    }
 }
