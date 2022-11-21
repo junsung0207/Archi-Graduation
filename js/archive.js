@@ -25,6 +25,13 @@ function onScroll(){
     $(".stlist-p").addClass("stlist-p-animated");
     stlist_switch = 1;
   }
+
+  if(scrollY > 8500){
+    $('.upper').css("display","block");
+  }
+  else if (scrollY < 5000) {
+    $('.upper').css("display","none");
+  }
 }
 
 var detail_isopen = 0;
@@ -45,4 +52,8 @@ function declose(n){
     "opacity":"0"
   });
   detail_isopen = 0;
+}
+
+function upper_clicked(){
+  window.scrollTo(0, 3150);
 }

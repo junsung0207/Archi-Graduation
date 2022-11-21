@@ -163,3 +163,7 @@
   text-align: center;
   font-size:30px;
 }
+
+.s_list > h3:active{
+  color:white;
+}

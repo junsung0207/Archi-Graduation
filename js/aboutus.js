@@ -22,4 +22,15 @@ function onScroll(){
   if(scrollY > 4600){
     $("#Introfeed4 p").addClass("fade");
   }
+
+  if(scrollY > 5100){
+    $('.upper').css("display","block");
+  }
+  else if (scrollY < 4000) {
+    $('.upper').css("display","none");
+  }
+}
+
+function upper_clicked(){
+  window.scrollTo(0, 0);
 }

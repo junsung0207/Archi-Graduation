@@ -38,11 +38,47 @@ body{
 .intro-name{
   font-size:30pt;
   word-spacing: 20pt;
+  margin-left:0%;
+  animation:intro-name-init 0.5s;
 }
+
+
+@keyframes intro-name-init {
+  0%{
+    margin-left:5%;
+    opacity:0;
+  }
+  100%{
+    margin-left:0%;
+    opacity:1;
+  }
+}
+
 .intro-name2{
   word-spacing:16pt;
   font-size:30pt;
 }
+
+.intro-name:active:after{
+    color:white;
+    position:absolute;
+    right:10%;
+    font-size:20pt;
+    word-spacing:3px;
+}
+/*멘트쓰자! */
+.intro p:nth-child(3):active:after{
+  content:'헉헉 개발하느라 힘들었어요.';
+}
+
+.intro p:nth-child(5):active:after{
+  content:'디자이너';
+}
+
+.intro p:nth-child(7):active:after{
+  content:'건축공학 비대위원장';
+}
+
 
 .introfeed-container{
   width:100%;
