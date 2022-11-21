@@ -11,6 +11,8 @@ function menubar_disable(){
   $(".menu-container").addClass("animated-after");
 }
 
-
+function warning_com_close(){
+  $(".warning_com").css("display","none");
+}
 
 console.log("test complete");
