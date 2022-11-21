@@ -9,7 +9,13 @@ window.addEventListener('scroll', onScroll);
 
 
 function onScroll(){
-  // console.log(scrollY);
+  console.log(scrollY);
+
+  // if(scrollY > 400){
+  //   $('.intro p:nth-child(9)').addClass("block");
+  // }
+
+
   if(scrollY > 2200){
     $("#Introfeed1 p").addClass("fade");
   }

@@ -35,12 +35,31 @@ body{
   color:#c43d1f;
 }
 
-.intro-name{
+.intro-name, .intro-name2{
   font-size:30pt;
   word-spacing: 20pt;
   margin-left:0%;
+  opacity:0;
   animation:intro-name-init 0.5s;
+  animation-fill-mode: forwards;
 }
+
+.intro p:nth-child(5){
+  animation-delay: 0.1s;
+}
+.intro p:nth-child(7){
+  animation-delay: 0.2s;
+}
+.intro p:nth-child(9){
+  animation-delay: 0.3s;
+}
+.intro p:nth-child(10){
+  animation-delay: 0.3s;
+}
+.intro p:nth-child(12){
+  animation-delay: 0.4s;
+}
+
 
 
 @keyframes intro-name-init {
