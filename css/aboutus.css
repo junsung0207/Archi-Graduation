@@ -207,6 +207,17 @@ body{
   background-image:url("../im/intro-2.png");
 }
 
+.introfeed:nth-child(3){
+  background-image:url("../im/intro-3.png");
+  height:700px;
+  background-size:cover;
+  background-position: center;
+}
+
+.introfeed:nth-child(3) .opa0{
+  margin-top:80px;
+}
+
 
 
 .introhyare{

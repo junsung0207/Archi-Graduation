@@ -348,3 +348,7 @@ footer{
   background-image:url('../im/qr.png');
   background-size:contain;
 }
+
+footer .fin_char:nth-child(1){
+  letter-spacing: 2px;
+}
