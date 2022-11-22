@@ -2,7 +2,7 @@ $( window ).on( "load", function() {
    console.log( "로딩성공" );
    $(".loading").css("visibility","hidden");
    $(".main_container").css("display","block");
-   
+
  });
 
 
@@ -10,7 +10,7 @@ window.addEventListener('scroll', onScroll);
 
 
 function onScroll(){
-  //console.log(scrollY);
+  // console.log(scrollY);
 
   // if(scrollY > 400){
   //   $('.intro p:nth-child(9)').addClass("block");
@@ -30,10 +30,10 @@ function onScroll(){
     $("#Introfeed4 p").addClass("fade");
   }
 
-  if(scrollY > 5100){
+  if(scrollY > 3800){
     $('.upper').css("display","block");
   }
-  else if (scrollY < 4000) {
+  else if (scrollY < 2700) {
     $('.upper').css("display","none");
   }
 }

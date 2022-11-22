@@ -3,7 +3,7 @@ $( window ).on( "load", function() {
    // $(".loading").css("visibility","hidden");
    // $(".main_background").css("display","flex");
 //화면숨기기 컨트롤
-   // $(".loading").css("display","none");
+   $(".loading").css("display","none");
    $(".main_background").css("display","flex");
    if(window.screen.width>=1024){
      $(".warning_com").css("display","flex");
