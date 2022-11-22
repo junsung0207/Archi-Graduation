@@ -1,7 +1,30 @@
 @font-face {
-  src: url("../font/swissk.ttf");
-  font-family: "Swis721";
+  src: url("../font/Swiss 721 Bold.otf");
+  font-family: "Swis721 Bold";
 }
+
+@font-face {
+  src: url("../font/Swiss 721 Heavy.otf");
+  font-family: "Swis721 ExtraBold";
+}
+
+@font-face {
+  src: url("../font/Swiss 721 Light.otf");
+  font-family: "Swis721 Light";
+}
+
+@font-face {
+  src: url("../font/Swiss 721 Medium.otf");
+  font-family: "Swis721 Medium";
+}
+
+@font-face {
+  src: url("../font/Swiss 721 Thin.otf");
+  font-family: "Swis721 Thin";
+}
+
+
+
 
 @font-face {
   src: url("../font/KoPub Dotum Medium.ttf");

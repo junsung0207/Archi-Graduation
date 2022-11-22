@@ -6,13 +6,15 @@
   background-size:cover;
   background-repeat: no-repeat;
   background-color:rgba(255, 0, 0, 0.5);
+  filter:brightness(1.0);
 
   position:fixed;
   z-index: -1;
   width:100%;
   height:100%;
 
-  display:flex;
+  /* display:flex; */
+  display:none;
   flex-direction:column;
   justify-content: center;
   align-items: center;
@@ -25,13 +27,41 @@
 }
 
 #Maincha1{
-  width:70vw;
+  width:auto;
   animation: admixture-bigger 1s;
+  font-size:12vw;
+  font-family: "Swis721 ExtraBold",sans-serif;
+  text-align:center;
+  color:white;
+  letter-spacing: 0;
+
+  transform:scale(1.1,1.0);
 }
 
 #Maincha2{
+  position:absolute;
+  top:54%;
   margin-top:40px;
-  width:35vw;
+  width:auto;
+  font-size:3vw;
+  font-family: "Swis721 Medium",sans-serif;
+  text-align:center;
+  color:rgba(237,203,160,1);
+  word-spacing: 10px;
+  letter-spacing: 1px;
+
+  animation: Maincha2 1s;
+}
+
+@keyframes Maincha2 {
+  0%{
+    letter-spacing:2px;
+    opacity:0;
+  }
+  100%{
+    letter-spacing:1px;
+    opacity:1;
+  }
 }
 
 #Maincha3{

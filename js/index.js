@@ -1,9 +1,4 @@
-$( window ).on( "load", function() {
-   console.log( "로딩성공" );
-   // $(".loading").css("visibility","hidden");
-   // $(".main_background").css("display","flex");
-   $(".loading").css("display","none");
- });
+
 
 function menubar_active(){
   // var menucon = document.getElementsByClassName("menu-container")[0].style = "z-index:5;opacity:1;"
@@ -16,16 +11,8 @@ function menubar_disable(){
   $(".menu-container").addClass("animated-after");
 }
 
-window.addEventListener('scroll', onScroll);
-
-
-function onScroll(){
-  // console.log(scrollY);
-  if(scrollY >= 200 && scrollY <= 1400)
-  var sc = (1400 - scrollY)/10;
-  var sc_v = (63+sc*0.1);
-  var test = sc_v+'vw';
-   $('#Feed1 img').width(test);
+function warning_com_close(){
+  $(".warning_com").css("display","none");
 }
 
 console.log("test complete");
