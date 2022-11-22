@@ -345,5 +345,6 @@ footer{
   height:300px;
   background-color:white;
   /* qr삽입 */
-  /* background-image:url(); */
+  background-image:url('../im/qr.png');
+  background-size:contain;
 }

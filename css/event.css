@@ -41,16 +41,16 @@
   margin-bottom:200px;
   text-align: left;
   font-family:'Pretendard Light',sans-serif;
-  font-size:5vw;
+  font-size:40px;
   -webkit-animation:fadein-left 1s;
           animation:fadein-left 1s;
 }
 
 .main_container p:nth-child(1){
-  font-size:7vw;
+  font-size:70px;
 }
 .main_container p:nth-child(3){
-  font-size:3vw;
+  font-size:40px;
   opacity:0;
   -webkit-animation:fadein-left 1s;
           animation:fadein-left 1s;
@@ -60,6 +60,7 @@
           animation-fill-mode: forwards;
   padding-top:50px;
 }
+
 
 .linkbox{
   font-size:20px;
