@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .main_container{
   background-color:black;
   width:100%;
@@ -20,10 +27,20 @@
   background-position: center;
   background-size: cover;
 
+  display:-webkit-box;
+
+  display:-ms-flexbox;
+
   display:flex;
-  flex-direction: column;
-  justify-content:space-around;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack:distribute;
+      justify-content:space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
 }
 
@@ -44,9 +61,13 @@
   color:#c43d1f;
   padding: 0 100px;
   font-family: "Pretendard Medium";
-  transform: scale(1, 1.1);
+  -webkit-transform: scale(1, 1.1);
+      -ms-transform: scale(1, 1.1);
+          transform: scale(1, 1.1);
 
-  animation:fadein-left_custom1 1s;
+  -webkit-animation:fadein-left_custom1 1s;
+
+          animation:fadein-left_custom1 1s;
 }
 
 .introbox1 div{
@@ -72,14 +93,17 @@
 }
 
 .introbox2-animated{
-  animation:fadein-right_custom1 1s;
+  -webkit-animation:fadein-right_custom1 1s;
+          animation:fadein-right_custom1 1s;
   opacity:1;
 }
 
 .introbox2 p{
   padding:0 100px;
   font-family: "Pretendard Medium",sans-serif;
-  transform: scale(1, 1.1);
+  -webkit-transform: scale(1, 1.1);
+      -ms-transform: scale(1, 1.1);
+          transform: scale(1, 1.1);
 }
 
 .introbox2 span:nth-child(2){
@@ -107,8 +131,20 @@
 }
 
 .stlist-p-animated{
-  animation:fadein-left-stlist-p 1s;
+  -webkit-animation:fadein-left-stlist-p 1s;
+          animation:fadein-left-stlist-p 1s;
   opacity:1;
+}
+
+@-webkit-keyframes fadein-left-stlist-p {
+  0%{
+    padding-left:100px;
+    opacity:0;
+  }
+  100%{
+    padding-left:0px;
+    opacity: 1;
+  }
 }
 
 @keyframes fadein-left-stlist-p {
@@ -148,9 +184,16 @@
   display:none;
   /* display:flex; */
   position:fixed;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   top:0;
   left:0;
@@ -158,6 +201,8 @@
   height:100%;
   background-color:rgba(0, 0, 0, 0.7);
   z-index:4;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
 
   color:white;

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 .main_background{
@@ -6,7 +13,8 @@
   background-size:cover;
   background-repeat: no-repeat;
   background-color:rgba(255, 0, 0, 0.5);
-  filter:brightness(1.0);
+  -webkit-filter:brightness(1.0);
+          filter:brightness(1.0);
 
   position:fixed;
   z-index: -1;
@@ -15,9 +23,16 @@
 
   /* display:flex; */
   display:none;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 
@@ -28,14 +43,19 @@
 
 #Maincha1{
   width:auto;
-  animation: admixture-bigger 1s;
+  -webkit-animation: admixture-bigger 1s;
+          animation: admixture-bigger 1s;
   font-size:12vw;
   font-family: "Swis721 ExtraBold",sans-serif;
   text-align:center;
   color:white;
   letter-spacing: 0;
 
-  transform:scale(1.1,1.0);
+  -webkit-transform:scale(1.1,1.0);
+
+      -ms-transform:scale(1.1,1.0);
+
+          transform:scale(1.1,1.0);
 }
 
 #Maincha2{
@@ -50,7 +70,20 @@
   word-spacing: 10px;
   letter-spacing: 1px;
 
-  animation: Maincha2 1s;
+  -webkit-animation: Maincha2 1s;
+
+          animation: Maincha2 1s;
+}
+
+@-webkit-keyframes Maincha2 {
+  0%{
+    letter-spacing:2px;
+    opacity:0;
+  }
+  100%{
+    letter-spacing:1px;
+    opacity:1;
+  }
 }
 
 @keyframes Maincha2 {
@@ -92,10 +125,21 @@
   height:1700px;
   color:white;
 
+  display:-webkit-box;
+
+  display:-ms-flexbox;
+
   display:flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .feed img{
@@ -119,14 +163,4 @@
 #Feed4{
 
   height:1300px;
-}
-
-
-
-
-
-
-
-@media screen and (max-width: 1068px){
-
 }
