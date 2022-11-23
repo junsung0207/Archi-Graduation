@@ -30,18 +30,18 @@ var brightlevel = 0.5;
 function onScroll(){
   //console.log(scrollY);
   if(scrollY >= 200 && scrollY <= 1400){
-  var sc = (1400 - scrollY)/10;
-  if(window.screen.width<1024){
-    var sc_weight = 0.15;
-    var sc_init = 60;
-  }else{
-    var sc_weight = 0.25;
-    var sc_init = 35;
-  }
-  var sc_v = (sc_init+sc*sc_weight);
-  var test = sc_v+'vw';
-   $('#Feed1 img').width(test);
-   // console.log(test);
+    var sc = (1400 - scrollY)/10;
+    if(window.screen.width<1024){
+      var sc_weight = 0.15;
+      var sc_init = 60;
+    }else{
+      var sc_weight = 0.25;
+      var sc_init = 35;
+    }
+    var sc_v = (sc_init+sc*sc_weight);
+    var test = sc_v+'vw';
+     $('#Feed1 img').width(test);
+     // console.log(test);
   }
   else if(scrollY <200){
     $('#Feed1 img').width("63.65vw");
@@ -52,12 +52,17 @@ function onScroll(){
   else{
     var br_init = 0;
   }
-   if(scrollY > br_init && scrollY < br_init+800 && window.screen.height){
+   if(scrollY > br_init && scrollY < br_init+800){
      var brscroll = (scrollY-br_init) / 800.0;
      //console.log('brscroll: '+brscroll)
      brightlevel = 1.0 -brscroll;
      var bright = "brightness(" + brightlevel + ")";
      //console.log(bright);
      $('.main_background').css("filter",bright);
+   }
+   else if(scrollY <= br_init){
+     var bright = "brightness(" + '1.0' + ")";
+     $('.main_background').css("filter",bright);
+     // console.log("bright 1.0")
    }
 }
