@@ -1,3 +1,15 @@
+function preloading (imageArray) {
+    let n = imageArray.length;
+    for (let i = 0; i < n; i++) {
+        let img = new Image();
+        img.src = imageArray[i];
+    }
+}
+
+preloading([
+    './im/b-alpha.gif'
+])
+
 $( window ).on( "load", function() {
    console.log( "로딩성공" );
    // $(".loading").css("visibility","hidden");

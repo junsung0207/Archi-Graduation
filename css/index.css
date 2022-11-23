@@ -38,7 +38,13 @@
 
 .maincha{
   font-size:20pt;
-  font-family:sans-serif;
+}
+.preload-font{
+  font-family:'Swis721 ExtraBold',sans-serif;
+  color:none;
+  position:absolute;
+  z-index:-99;
+  font-size:0.0001px;
 }
 
 #Maincha1{
