@@ -256,6 +256,51 @@ footer{
           animation:upper-init2 1s;
 }
 
+.downer{
+  position:fixed;
+  display:none;
+  cursor:pointer;
+  z-index:-1;
+}
+
+.downer::after{
+  position:fixed;
+  right:46%;
+  bottom:14%;
+  content:'';
+  width:50px;
+  height:50px;
+  border-top:1.4px solid white;
+  border-right:1.4px solid white;
+  -webkit-transform:rotate(135deg);
+      -ms-transform:rotate(135deg);
+          transform:rotate(135deg);
+}
+
+.downer::before{
+  position:fixed;
+  right:46%;
+  bottom:12%;
+  content:'';
+  width:50px;
+  height:50px;
+  border-top:1px solid white;
+  border-right:1px solid white;
+  -webkit-transform:rotate(135deg);
+      -ms-transform:rotate(135deg);
+          transform:rotate(135deg);
+}
+
+.downer::after{
+  -webkit-animation: upper-init 1s;
+          animation: upper-init 1s;
+}
+
+.downer::before{
+  -webkit-animation:upper-init2 1s;
+          animation:upper-init2 1s;
+}
+
 @-webkit-keyframes upper-init {
   0%{
     opacity:0;

@@ -20,12 +20,14 @@ $( window ).on( "load", function() {
    if(window.screen.width>=1024){
      $(".warning_com").css("display","flex");
    }
+   $('.downer').css("display","block");
  });
 
 window.addEventListener('scroll', onScroll);
 
 
 var brightlevel = 0.5;
+var done_downer = 0;
 
 function onScroll(){
   //console.log(scrollY);
@@ -64,5 +66,13 @@ function onScroll(){
      var bright = "brightness(" + '1.0' + ")";
      $('.main_background').css("filter",bright);
      // console.log("bright 1.0")
+   }
+
+   if(scrollY < 1000 && done_downer == 0){
+     $('.downer').css("display","block");
+   }
+   else {
+     $('.downer').css("display","none");
+     done_downer = 1;
    }
 }
